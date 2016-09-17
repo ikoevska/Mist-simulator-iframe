@@ -20,11 +20,11 @@
             allItems = $('#navigation-container-more').find('a'),
             navigationShowMoreContent = '';
 
-            allItems.each(function(index) {
-                navigationShowMoreContent += '<li>' + allItems[index].outerHTML + '</li>';
-            });
+        allItems.each(function(index) {
+            navigationShowMoreContent += '<li>' + allItems[index].outerHTML + '</li>';
+        });
 
-             navigationShowMoreView.html(navigationShowMoreContent);
+        navigationShowMoreView.html(navigationShowMoreContent);
     });
 
     app.listViewClick = function _listViewClick(item) {

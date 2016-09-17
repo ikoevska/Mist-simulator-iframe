@@ -1,0 +1,50 @@
+<div data-role="view" data-title="Details" data-model="app.homeView.homeViewModel" data-bind="events: { show: detailsShow }" id="homeViewModelScreen" class="screen screen--detail">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <a data-role="backbutton" data-align="left">Back</a>
+            <span>Detail</span>
+        </div>
+    </header>
+
+    <div class="details-content screen__content screen__content--details">
+        <div class="km-listview-wrapper">
+            <ul class="km-listview km-list km-listinset details-fields">
+
+                <li>
+                    <div data-bind="html: currentItem.GroceryItem"></div>
+                </li>
+
+                <li class="form-content-item">
+                    <div id="hyperlinkField" class="editableListItem field field--link">
+
+                        <div class="field__label">Hyperlink</div>
+
+                        <div class="field__content">
+
+                            <a href="#" onclick="app.openLink('https://www.progress.com/');" class="link">Hyperlink</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="detail-content-item">
+
+
+                    <label id="urlField" class="km-label-above field field--text-block">
+
+                        <span class="field__label">Text Block</span>
+
+
+                        <div class="textBlock field__content">&lt;a href=&quot;http://docs.telerik.com&quot;&gt;here&lt;/a&gt;</div>
+
+                    </label>
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- START_CUSTOM_CODE_homeViewModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_homeViewModel -->
+</div>

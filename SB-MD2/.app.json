@@ -4,13 +4,127 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "addedGroceryItem",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Text field",
+                  "inputType": "text",
+                  "titlePosition": "left",
+                  "inputTextType": "text",
+                  "placeholder": "Type here ...",
+                  "dataBinding": "GroceryItem"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "number",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Number",
+                  "inputType": "number",
+                  "titlePosition": "left",
+                  "dataBinding": "GroceryItemAmount"
+                }
+              ],
+              "name": "editableListForm1",
+              "formType": "add"
+            }
+          ],
+          "name": "homeModel",
+          "enableDataBinding": true,
+          "dataProvider": "sbMd2",
+          "collection": "Groceries",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "homeView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "addScreenExtraFields": [],
+          "editScreenExtraFields": [],
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "hyperlink",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Hyperlink",
+                  "inputType": "link",
+                  "titlePosition": "left",
+                  "linkType": "http",
+                  "linkAddress": "https://www.progress.com/",
+                  "linkText": "Hyperlink"
+                },
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "url",
+                  "dataBindingRelationChildren": "[]",
+                  "dataBindingMultipleSelectChildren": "[]",
+                  "title": "Text Block",
+                  "inputType": "textBlock",
+                  "wideFieldTitlePosition": "top",
+                  "value": "<a href=\"http://docs.telerik.com\">here</a>"
+                }
+              ],
+              "name": "editableListForm6",
+              "formType": "detail"
+            }
+          ],
+          "name": "homeViewModel",
+          "dataProvider": "sbMd2",
+          "collection": "Groceries",
+          "headerField": "GroceryItem",
+          "subHeaderField": "GroceryItemAmount",
+          "addItemForm": false,
+          "editItemForm": false,
+          "deleteItemButton": false,
+          "pullToRefresh": true,
+          "endlessScroll": false,
+          "isMapView": false,
+          "serverSideSorting": false,
+          "serverSidePaging": false,
+          "detailHeaderFieldSource": "static",
+          "detailHeaderFieldValue": "Detail",
+          "detailDescriptionField": "GroceryItem"
+        }
+      ],
+      "title": "Groceries",
+      "addToNavigation": true,
+      "icon": "globe"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "sbMd2",
+      "everliveUrl": "//testtap.telerik.com/bs-api/v1/",
+      "title": "SB-MD2 / SB-MD2",
+      "source": "everlive",
+      "everliveKey": "djy6m1wofoej8kn2",
+      "offlineStorage": true
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",

@@ -1,0 +1,45 @@
+{
+  "ProjectName": "SB-MD2",
+  "ProjectGuid": "7be68bb0-15f0-40a0-9127-f1ac0fc8494e",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.SBMD2",
+  "DisplayName": "SB-MD2",
+  "Author": "",
+  "Description": "SB-MD2",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{70580547-9859-4a05-ada3-026cdf50dec8}",
+  "WP8ProductID": "{375badc3-c9af-4651-8722-c37f5a8e93da}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.SBMD2",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
